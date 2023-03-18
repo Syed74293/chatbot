@@ -40,7 +40,7 @@ let name = prompt('Enter Your Name to Join Chat Spot');
 
 socket.emit('new-user-joined', name);
 socket.on('user-joined', name => {
-    append(`${name} joined Chat Spot`, 'left');
+    append(`${name} joined Chat Bot`, 'left');
 });
 
 socket.on('receive', data => {
@@ -48,5 +48,5 @@ socket.on('receive', data => {
 });
 
 socket.on('leave', name => {
-    append(`${name} left Chat Spot`, 'left');
+    append(`${name} left Chat Bot`, 'left');
 });
