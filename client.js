@@ -36,7 +36,7 @@ const appendmsg = (user, msg, pos) => {
         render.scrollTo(0, render.scrollHeight);
 }
 
-let name = prompt('Enter Your Name to Join Chat Spot');
+let name = prompt('Enter Your Name to Join Chat Bot');
 
 socket.emit('new-user-joined', name);
 socket.on('user-joined', name => {
