@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(180deg, #07aceb, #27f09c) no-repeat;
+    height: 100vh;
+}
+
+#head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 3px;
+}
+
+#head img {
+    width: 50px;
+    filter: drop-shadow(0px 0px 3px black);
+    opacity: 0.7;
+}
+
+#head h1 {
+    font-size: 2rem;
+    margin: 0px 11px;
+    color: #3bcae1;
+    text-shadow: 0px 0px 3.7px black;
+    font-family: 'Shantell Sans', cursive;
+}
+
+#chat {
+    width: 90vw;
+    height: 77vh;
+    margin: 11px auto;
+    border: 1px solid #3bcae1;
+    box-shadow: inset 0px 0px 3.7px black;
+    border-radius: 5px;
+    padding: 7px;
+    overflow-y: auto;
+}
+
+#chat::-webkit-scrollbar{
+    background-color: transparent;
+    box-shadow: inset 0px 0px 3.7px black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 7px;
+}
+
+#chat::-webkit-scrollbar-thumb{
+    background-color: #3bcae1;
+    box-shadow: inset 0px 0px 3.7px black;
+    border-radius: 5px;
+}
+
+#chat::-webkit-scrollbar-thumb:hover{
+    box-shadow: inset 0px 0px 4.7px black;
+}
+
+.msg {
+    display: flex;
+    box-shadow: inset 0px 0px 3.7px 0.3px black, inset 0px 0px 3.7px 0px white;
+    background-color: #3bcae1;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 1px;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.msg h6 {
+    font-size: 0.75rem;
+    max-width: 11vw;
+    word-wrap: break-word;
+}
+
+.msg h4{
+    margin-left: 11px;
+    max-width: 21vw;
+    font-size: 0.9rem;
+    word-wrap: break-word;
+}
+
+.left {
+    float: left;
+    clear: both;
+}
+
+.right {
+    float: right;
+    clear: both;
+}
+
+
+
+#send form {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 90.7vw;
+}
+
+#send form input {
+    width: 85.7vw;
+    border: none;
+    outline: none;
+    box-shadow: inset 0px 0px 3.7px black;
+    background: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 7px;
+    font-family: 'Shantell Sans', cursive;
+    font-weight: bold;
+}
+
+#send form input::placeholder {
+    color: black;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 3.7px 0.3px black, inset 0px 0px 3.7px 0px white;
+    background-color: #3bcae1;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 7px 11px;
+    font-family: 'Shantell Sans', cursive;
+    overflow-x: hidden;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: all 0.2s linear;
+}
+
+.btn:hover{
+    box-shadow: inset 0px 0px 5px 0.5px black, inset 0px 0px 3.7px 0px white;
+}
+
+@media screen and (max-width: 593px) {
+    #send form input{
+        max-width: 65.7vw;
+    }
+    .btn{
+        padding: 7px;
+    }
+}
