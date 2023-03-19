@@ -3,7 +3,7 @@ const socket = io('https://syed74293.glitch.me');
 const form = document.getElementById('msgform');
 const message = document.getElementById('msg');
 const render = document.querySelector('#chat');
-const audio = new Audio('./alert.mp3');
+const audio = document.getElementById("myAudio");
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
